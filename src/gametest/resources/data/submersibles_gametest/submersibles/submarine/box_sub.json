@@ -1,0 +1,75 @@
+{
+  "properties": {
+    "engineSpeed": 0.018,
+    "friction": 0.02,
+    "verticalSpeed": 0.12,
+    "yawSpeed": 2.5
+  },
+  "hull_drag": 0.04,
+  "spool_ticks": 40,
+  "rise": 0.06,
+  "draft": 0.7,
+  "tilt": 12,
+  "hull": [
+    {
+      "from": [
+        -12,
+        0,
+        -36
+      ],
+      "to": [
+        12,
+        24,
+        36
+      ]
+    },
+    {
+      "from": [
+        -6,
+        24,
+        -6
+      ],
+      "to": [
+        6,
+        34,
+        10
+      ]
+    }
+  ],
+  "propellers": [
+    {
+      "part": {
+        "group": "propeller"
+      },
+      "pivot": [
+        0,
+        12,
+        -38
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "speed": 1.0
+    }
+  ],
+  "upgrades": 4,
+  "weapons": [
+    [
+      -6,
+      6,
+      38
+    ],
+    [
+      6,
+      6,
+      38
+    ]
+  ],
+  "hatch": [
+    0,
+    36,
+    2
+  ]
+}

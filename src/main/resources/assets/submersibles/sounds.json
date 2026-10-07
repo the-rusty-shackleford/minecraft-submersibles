@@ -1,0 +1,11 @@
+{
+  "torpedo_launch": {
+    "sounds": [
+      {
+        "name": "submersibles:torpedo_launch",
+        "attenuation_distance": 32
+      }
+    ],
+    "subtitle": "subtitles.submersibles.torpedo_launch"
+  }
+}

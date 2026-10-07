@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/the-rusty-shackleford/minecraft-submersibles/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Rusty Shackleford, nfx"
+description='''
+A submarine protocol, layered on Vanilla Wheels. A submarine is a datapack
+entry and a mesh: this mod owns the diving -- the propeller, the planes, the
+trim that holds its depth, the buoyancy that brings a dead boat up -- the
+crew's air, the fit-out that takes Immersive Aircraft's upgrades, and the
+Torpedo Tube. Submarine mods nest this jar inside their own; the loader keeps
+one copy.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# The vehicle protocol: seats, chests, fuel, paint, lights, keys, the lift; the hull,
+# the crash judging and the vertical controls a body that moves in three dimensions
+# shares (its D-0031). Nested.
+[[dependencies.${mod_id}]]
+    modId="vanillawheels"
+    type="required"
+    versionRange="[1.13.0,2.0)"
+    ordering="AFTER"
+    side="BOTH"

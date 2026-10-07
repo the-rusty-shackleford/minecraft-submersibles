@@ -1,0 +1,17 @@
+{
+  "item.submersibles.torpedo_tube": "Torpedo Tube",
+  "item.submersibles.torpedo": "Torpedo",
+  "entity.submersibles.torpedo": "Torpedo",
+  "entity.submersibles.submarine": "Submarine",
+  "submersibles.fit_out": "%s: fit-out",
+  "submersibles.fit_out.slot.upgrade": "Upgrade: an Immersive Aircraft upgrade",
+  "submersibles.fit_out.slot.weapon": "Weapon: a Torpedo Tube",
+  "submersibles.fit_out.slot.paint": "Paint: a dye",
+  "submersibles.fit_out.no_upgrades": "No upgrade slots",
+  "submersibles.fit_out.readout.speed": "Speed %s%% · Fuel %s%%",
+  "submersibles.fit_out.readout.wear": "Wear %s%%",
+  "submersibles.fit_out.instruments": " · Instruments",
+  "submersibles.no_torpedoes": "No torpedoes in the hold",
+  "subtitles.submersibles.torpedo_launch": "Torpedo launches",
+  "submersibles.instruments": "Depth %s m · Heading %s° %s · %s m/s"
+}

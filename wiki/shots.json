@@ -1,0 +1,8 @@
+{
+  "shots": [
+    {"from": "../minecraft-explorer-sub/run/booth/screenshots/explorer-at-depth.png", "to": "img/diving.webp"},
+    {"from": "../minecraft-scout-sub/run/booth/screenshots/scout-pilot-view.png", "to": "img/through-the-dome.webp"},
+    {"from": "../minecraft-explorer-sub/run/booth/screenshots/explorer-floods-on.png", "to": "img/lamps.webp"},
+    {"from": "../minecraft-explorer-sub/run/booth/screenshots/explorer-fit-out.png", "to": "img/fit-out.webp", "crop": [375, 93, 903, 628], "screen": true}
+  ]
+}

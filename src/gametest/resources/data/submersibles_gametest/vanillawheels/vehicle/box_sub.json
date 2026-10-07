@@ -1,0 +1,128 @@
+{
+  "mesh": "submersibles_gametest:box_sub",
+  "texture": "submersibles_gametest:textures/entity/box_sub.png",
+  "scale": 0.0625,
+  "handedness": "right",
+  "body": {
+    "width": 1.5,
+    "length": 4.5,
+    "height": 1.5,
+    "parts": [
+      {
+        "at": [
+          0,
+          0,
+          26
+        ],
+        "width": 1.5,
+        "height": 1.5
+      },
+      {
+        "at": [
+          0,
+          0,
+          -26
+        ],
+        "width": 1.5,
+        "height": 1.5
+      }
+    ]
+  },
+  "seats": [
+    {
+      "at": [
+        0,
+        10,
+        31
+      ],
+      "driver": true,
+      "eye": [
+        0,
+        16,
+        33
+      ]
+    },
+    {
+      "at": [
+        0,
+        4,
+        -4
+      ]
+    }
+  ],
+  "wheels": {
+    "radius": 1,
+    "drawn": false,
+    "positions": [
+      {
+        "forward": 30,
+        "right": -10
+      },
+      {
+        "forward": 30,
+        "right": 10
+      },
+      {
+        "forward": -30,
+        "right": -10
+      },
+      {
+        "forward": -30,
+        "right": 10
+      }
+    ]
+  },
+  "engine": {
+    "max_speed": 0.3,
+    "acceleration": 0.02,
+    "reverse_speed": 0.1,
+    "brake": 0.03
+  },
+  "climb": 0.5,
+  "mass": 3.0,
+  "fuel": {
+    "capacity": 24000
+  },
+  "storage": {
+    "chests": [
+      {
+        "at": [
+          0,
+          2,
+          -24
+        ],
+        "yaw": 180,
+        "scale": 0.3,
+        "rows": 3
+      }
+    ]
+  },
+  "headlights": {
+    "at": [
+      [
+        -8,
+        4,
+        36.5
+      ],
+      [
+        8,
+        4,
+        36.5
+      ]
+    ],
+    "part": {
+      "material": "lamp"
+    },
+    "range": 16
+  },
+  "paint": {
+    "part": {
+      "material": "body"
+    },
+    "default": "yellow"
+  },
+  "glass": {
+    "material": "glass"
+  },
+  "camera": 8.0
+}

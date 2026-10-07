@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:gunpowders"
+    }
+  ],
+  "result": {
+    "id": "submersibles:torpedo",
+    "count": 2
+  }
+}

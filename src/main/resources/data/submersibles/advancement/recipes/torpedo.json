@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "submersibles:torpedo"
+      }
+    },
+    "has_torpedo_tube": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "submersibles:torpedo_tube"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_torpedo_tube"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "submersibles:torpedo"
+    ]
+  }
+}
