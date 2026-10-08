@@ -21,7 +21,16 @@ is `knowledge/sources/nfx-handoff-2026-10-07.md`; the approved plan is
 `~/.claude/plans/peppy-scribbling-lollipop.md`. Decisions: D-0001 (diving), D-0002 (the fit-out),
 D-0003 (torpedoes).
 
-## Status: 1.0.0 built, unreleased
+## Status: 1.0.0 released 2026-10-08 in pack 1.78.0
+
+- **Released** on Rusty's go ("Release the submarine batch"), with Vanilla Wheels 1.13.0, the Explorer
+  and the Scout: public repo created then, tag `v1.0.0` at `b93cb38`; the release gate (2026-10-08)
+  green with 28 JUnit, 21 gametests and the booth's 16 checks; sha1 `dfc2d66e` on GitHub and on the
+  server, top level as well as nested (the server repo's `knowledge/releases/pack-1.78.0.md`). On the
+  box it logged "Submersibles: 11 upgrade items known" (Immersive Aircraft 1.4.6). Not yet seen:
+  anyone diving on the box.
+
+The status as built:
 
 - **Built (2026-10-07):** the dive, crew air, the wreck that comes up, setting down on water, the
   fit-out (upgrades by Immersive Aircraft's files and rule, tubes, paint, the readout), the
@@ -46,9 +55,10 @@ D-0003 (torpedoes).
   seats, 8 gametests, its booth's 17 checks) and `minecraft-scout-sub` (one seat, 8 gametests, 16
   checks). Their ports and the Scout's bubble are clear from inside through Vanilla Wheels' cockpit
   glass (its D-0031). The wiki page (`wiki/`) uses their photos.
-- **Not done:** Rusty's look at the photos; the 4070 playtest with Immersive Aircraft and Man of
-  Many Planes, to tune the feel and see the real upgrade items in the slots. Release on Rusty's go,
-  with the Set It Down fixes he queued for the same pack.
+- **Rusty passed the photos** ("Looks good proceed") and drove the subs in a 4070 playtest (Prism
+  instance `submarine-playtest`, world "Submarine Harbour"), which brought Vanilla Wheels' D-0033
+  (the boarding line names R). Whether he fitted the real upgrade items there was not reported;
+  feel numbers unchanged.
 
 ## Shape
 

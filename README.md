@@ -11,7 +11,7 @@ repair, and the Mechanic Lift) that dives. This mod owns:
 
 Submarine mods ship data and assets only.
 
-**1.0.0** is built but not released. It needs Vanilla Wheels 1.13.0 (its D-0031: the hull, the
+**1.0.0** is released (pack 1.78.0). It needs Vanilla Wheels 1.13.0 (its D-0031: the hull, the
 crash judging and the up/down/get-out keys a body that moves in three dimensions shares).
 
 It ships two things of its own: the **Torpedo Tube** and the **Torpedo**.
