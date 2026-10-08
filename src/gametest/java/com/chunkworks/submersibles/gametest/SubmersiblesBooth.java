@@ -224,6 +224,7 @@ public final class SubmersiblesBooth {
             mc.options.setCameraType(CameraType.THIRD_PERSON_BACK);
             Submarine c = client(mc);
             verdict("the booth's player takes the controls", () -> c != null && c.getControllingPassenger() == mc.player ? null : "riding " + mc.player.getVehicle());
+            verdict("the boarding line names the get-out key, not Shift", () -> namesGetOut(mc));
             if (c != null) {
                 // Look along the hull, the way it faces, a little down: the third-person camera follows the rider's eye.
                 mc.player.setYRot(c.getYRot());
@@ -394,6 +395,25 @@ public final class SubmersiblesBooth {
     }
 
     // --- plumbing --------------------------------------------------------
+
+    /**
+     * effects: null if the line the game showed on boarding names the get-out key, else what it
+     * said; the game's own line names Shift, which dives (Vanilla Wheels' D-0031)
+     */
+    @org.jetbrains.annotations.Nullable
+    private static String namesGetOut(Minecraft mc) {
+        String want = net.minecraft.network.chat.Component.translatable("mount.onboard",
+                com.chunkworks.vanillawheels.client.Keys.GET_OUT.getTranslatedKeyMessage()).getString();
+        String line;
+        try {
+            java.lang.reflect.Field f = net.minecraft.client.gui.Gui.class.getDeclaredField("overlayMessageString");
+            f.setAccessible(true);
+            line = f.get(mc.gui) instanceof net.minecraft.network.chat.Component c ? c.getString() : null;
+        } catch (ReflectiveOperationException e) {
+            line = "unreadable: " + e;
+        }
+        return want.equals(line) ? null : "line \"" + line + "\", want \"" + want + "\"";
+    }
 
     /** effects: returns the client's submarine, or null */
     @org.jetbrains.annotations.Nullable
